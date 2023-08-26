@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Bodiul | Protfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        @-webkit-keyframes fadeInDown {
+    from {
+        opacity:0;
+        -webkit-transform: translatey(-10px);
+        -moz-transform: translatey(-10px);
+        -o-transform: translatey(-10px);
+        transform: translatey(-10px);
+    }
+    to {
+        opacity:1;
+        -webkit-transform: translatey(0);
+        -moz-transform: translatey(0);
+        -o-transform: translatey(0);
+        transform: translatey(0);
+    }
+}
+@-moz-keyframes fadeInDown {
+    from {
+        opacity:0;
+        -webkit-transform: translatey(-100px);
+        -moz-transform: translatey(-100px);
+        -o-transform: translatey(-100px);
+        transform: translatey(-100px);
+    }
+    to {
+        opacity:1;
+        -webkit-transform: translatey(0);
+        -moz-transform: translatey(0);
+        -o-transform: translatey(0);
+        transform: translatey(0);
+    }
+}
+@keyframes fadeInDown {
+    from {
+        opacity:0;
+        -webkit-transform: translatey(-100px);
+        -moz-transform: translatey(-100px);
+        -o-transform: translatey(-100px);
+        transform: translatey(-100px);
+    }
+    to {
+        opacity:1;
+        -webkit-transform: translatey(0);
+        -moz-transform: translatey(0);
+        -o-transform: translatey(0);
+        transform: translatey(0);
+    }
+}
+.in-down{
+    -webkit-animation-name: fadeInDown;
+    -moz-animation-name: fadeInDown;
+    -o-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 3s;
+    -moz-animation-duration: 3s;
+    -o-animation-duration: 3s;
+    animation-duration: 3s;
+}
+
+
+</style>
+</head>
+<body>
+    <nav class="header-nav in-down">
+        <div class="container">
+            <div class="nav">
+                <div class="logo">
+                    <h1><a href="#">BODIUL</a></h1>
+                </div>
+                <i class="fa-solid fa-bars" onclick="toggleClass()" id="icon"></i>
+                <div class="navitems" id="navitems">
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-house"></i> Home</a></li>
+                        <li><a href="#"><i class="fa-solid fa-user"></i> About</a></li>
+                        <li><a href="#"><i class="fa-solid fa-desktop"></i> Project</a></li>
+                        <li><a href="#"><i class="fa-solid fa-file"></i> Resume</a></li>
+                        <li><a href="#"><i class="fa-solid fa-blog"></i> Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container-para text-light" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-7" data-aos="fade-up">
+                    <div class="row-para-1st">
+                        <h1>Hi There! </h1>
+                        <h1 class="mb-5">I'M <b style="color: #CD5FF8;">BODIUL ALAM POLASH</b></h1>
+                        <div id="page_wrap">
+                          <h1 class="typer" id="main" data-words="Software Developer,Freelancer,MERN Stack Developer,Open Source Contributor" data-delay="100" data-deleteDelay="1000"></h1>   
+                         </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-5"  data-aos="fade-down">
+                    <div class="img-box">
+                        <img src="img/bg-home.png" alt="section img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="myself-area" style="margin-top: 100px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="myself-para">
+                        <h1 data-aos="fade-down">LET ME <span><i>INTRODUCE</i></span> MYSELF</h1>
+                        <p data-aos="fade-down">I fell in love with programming and I have at least learnt something, I think… <i style="color: #3A96DD;" class="fa-solid fa-child-dress"></i></p>
+                        <p data-aos="fade-up">I am fluent in classics like <span><i>C++, Javascript and Go.</i></span></p>
+                        <p data-aos="fade-down">My field of Interest's are building new <span><i>Web Technologies and Products </i></span>and also in areas related to <span><i>Blockchain.</i></span></p>
+                        <p data-aos="fade-up"> Whenever possible, I also apply my passion for developing products with <span><i> Node.js </i></span>and <span> <i>Modern Javascript Library and Frameworks</i></span>  like <span><i>React.js and Next.js</i></span></p>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up">
+                    <div class="myself-img">
+                        <img src="img/myself-img.svg" alt="Myself image">
+                    </div>
+                </div>
+                <div class="FIND-ME-area text-center mt-5">
+                    <h1 data-aos="fade-down"><span>FIND</span> ME ON</h1>
+                    <p data-aos="fade-up" style="font-size: 18px;">Feel free to <span> connect</span> with me</p>
+                    <div id="icon-area" class="mt-5">
+                        <i class='bx bxl-github' data-aos="fade-up"></i>
+                        <i class='bx bxl-twitter' data-aos="fade-down"></i>
+                        <i class='bx bxl-linkedin' data-aos="fade-up"></i>
+                        <i class='bx bxl-instagram-alt' data-aos="fade-down"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="about-para">
+                        <h1 data-aos="fade-down">Know Who <span>I'M</span></h1>
+                        <p data-aos="fade-up">Hi Everyone, I am <span><i>Bodiul Alam Polash</i></span> from <span><i> Rajshahi, Bangladesh.</i></span>I am a final year student pursuing an Integrated MSc (IMSc) in Maths and Computing at BIT Mesra.</p>
+                        <p class="mb-5" data-aos="fade-down">Additionally, I am currently employed as a software developer at Juspay.</p>
+                        <div class="order-list text-light">
+                            <p>Apart from coding, some other activities that I love to do!</p>
+                            <ul>
+                                <li data-aos="fade-down"><i class="fa-solid fa-hand-point-right"></i> Playing Games</li>
+                                <li data-aos="fade-up"><i class="fa-solid fa-hand-point-right"></i> Writing Tech Blogs</li>
+                                <li data-aos="fade-down"><i class="fa-solid fa-hand-point-right"></i> Travelling</li>
+                            </ul>
+                        </div>
+                        <p style="color: #6B5779; text-align: center; margin-top: 30px; font-size: 20px;" data-aos="fade-up">"Strive to build things that make a difference!"<br> Soumyajit</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="about-image">
+                        <img  style="width: 100%;" data-aos="fade-down"  src="img/R.jpg"alt="image">
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+    <div class="skill-area">
+        <div class="container">
+            <div class="skill-button">
+                <div class="btn1" data-aos="fade-down">
+                    <i class='bx bxl-c-plus-plus'></i>
+                </div>
+                <div class="btn1" data-aos="fade-up">
+                    <i class='bx bxl-nodejs'></i>
+                </div>
+                <div class="btn1" data-aos="fade-down">
+                    <i class='bx bxl-go-lang'></i>
+                </div>
+                <div class="btn1" data-aos="fade-up">
+                    <i class='bx bxl-nodejs'></i>
+                </div>
+                <div class="btn1" data-aos="fade-down">
+                    <i class='bx bxl-react' ></i>
+                </div>
+                <div class="btn1" data-aos="fade-up">
+                    <i class='bx bxl-python' ></i>
+                </div>
+                <div class="btn1" data-aos="fade-down">
+                    <i class='bx bxl-php' ></i> 
+                </div>
+                <div class="btn1" data-aos="fade-up">
+                    <i class='bx bxl-java' ></i>
+                </div>
+                <div class="btn1" data-aos="fade-down">
+                    <i class="fa-brands fa-vuejs"></i>
+                </div>
+                <div class="btn1" data-aos="fade-down">
+                    <i class="fa-brands fa-laravel"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tools-area">
+        <div class="container">
+            <h1 data-aos="fade-up"><span>Tools</span> I use</h1>
+            <div class="button-area" data-aos="flip-up">
+                <div class="btn2">
+                    <i class="fa-brands fa-apple"></i>
+                </div>
+                <div class="btn2">
+                    <i class='bx bxl-visual-studio'></i>
+                </div>
+                <div class="btn2">
+                    <i class='bx bxs-notepad'></i>
+                </div>
+                <div class="btn2">
+                    <i class='bx bx-shape-triangle'></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="project-area">
+        <div class="container">
+            <h1 data-aos="fade-up">My Recent <span> Works</span></h1>
+            <p class="ppp" data-aos="fade-down">Here are a few project i'ev worked on recently</p>
+            <div class="row mt-5">
+                <div class="col-lg-4 col-md-6 marginbox" data-aos="flip-right">
+                    <div class="project-box-1">
+                        <img src="img/project-img-1.png" alt="Project-image-1">
+                        <div class="project-box-para">
+                            <h3>Chatify</h3>
+                            <p style="font-size: 18px;"><i>lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequatur neque blanditiis laboriosam enim animi accusamus culpa, voluptatum quasi aliquid deleniti corrupti voluptas dolor nemo nisi, ratione architecto incidunt. Odio.</i></p>
+                            <div class="project-box-btn">
+                                <button class="button1"><i class='bx bxl-github'></i> GitHub</button>
+                                <button class="button2"><i class="fa-solid fa-file"></i>    Demo</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 marginbox" data-aos="flip-left">
+                    <div class="project-box-1">
+                        <img src="img/project-img-2.png" alt="Project-image-1">
+                        <div class="project-box-para">
+                            <h3>Bits-0f-C0de</h3>
+                            <p style="font-size: 18px;"><i>lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequatur neque blanditiis laboriosam enim animi accusamus culpa, voluptatum quasi aliquid deleniti corrupti voluptas dolor nemo nisi, ratione architecto incidunt. Odio.</i></p>
+                            <div class="project-box-btn">
+                                <button class="button1"><i class='bx bxl-github'></i> GitHub</button>
+                                <button class="button2"><i class="fa-solid fa-file"></i>    Demo</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 marginbox" data-aos="flip-right">
+                    <div class="project-box-1">
+                        <img src="img/project-img-3.png" alt="Project-image-1">
+                        <div class="project-box-para">
+                            <h3>Editor.io</h3>
+                            <p style="font-size: 18px;"><i>lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequatur neque blanditiis laboriosam enim animi accusamus culpa, voluptatum quasi aliquid deleniti corrupti voluptas dolor nemo nisi, ratione architecto incidunt. Odio.</i></p>
+                            <div class="project-box-btn">
+                                <button class="button1"><i class='bx bxl-github'></i> GitHub</button>
+                                <button class="button2"><i class="fa-solid fa-file"></i>    Demo</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 marginbox" data-aos="flip-left">
+                    <div class="project-box-1">
+                        <img src="img/project-img-4.png" alt="Project-image-1">
+                        <div class="project-box-para">
+                            <h3>Plant AI</h3>
+                            <p style="font-size: 18px;"><i>lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequatur neque blanditiis laboriosam enim animi accusamus culpa, voluptatum quasi aliquid deleniti corrupti voluptas dolor nemo nisi, ratione architecto incidunt. Odio.</i></p>
+                            <div class="project-box-btn">
+                                <button class="button1"><i class='bx bxl-github'></i> GitHub</button>
+                                <button class="button2"><i class="fa-solid fa-file"></i>    Demo</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 " data-aos="flip-left">
+                    <div class="project-box-1">
+                        <img src="img/project-img-5.png" alt="Project-image-1">
+                        <div class="project-box-para">
+                            <h3>Ai For Social Good</h3>
+                            <p style="font-size: 18px;"><i>lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequatur neque blanditiis laboriosam enim animi accusamus culpa, voluptatum quasi aliquid deleniti corrupti voluptas dolor nemo nisi, ratione architecto incidunt. Odio.</i></p>
+                            <div class="project-box-btn">
+                                <button class="button1"><i class='bx bxl-github'></i> GitHub</button>
+                                <button class="button2"><i class="fa-solid fa-file"></i>    Demo</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 " data-aos="flip-right">
+                    <div class="project-box-1">
+                        <img src="img/project-img-6.png" alt="Project-image-1">
+                        <div class="project-box-para">
+                            <h3>Face Recognition and Emotion Detection
+                            </h3>
+                            <p style="font-size: 18px;"><i>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A praesentium laudantium quos ipsam debitis veritatis facilis laboriosam earum, voluptatibus ut, tempora nobis nemo obcaecati voluptatem? Distinctio!</i></p>
+                            <div class="project-box-btn">
+                                <button class="button1"><i class='bx bxl-github'></i> GitHub</button>
+                                <button class="button2"><i class="fa-solid fa-file"></i>    Demo</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact-area`pt-5 pb-5">
+        <div class="container">
+            <div class="contact-para mb-5">
+                <h1 data-aos="fade-down" style="color: #fff; text-align: center;">Contact <span>Us</span></h1>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-6 col-md-6 col-sm-12" data-aos="fade-down">
+                    <div class="inputform">
+                        <div class="name-input">
+                            <input type="text" id="fname" placeholder="First Name" required>
+                            <input type="text" id="lname" placeholder="First Name" required>
+                        </div>
+                        <input style="width: 100%; background-color: transparent; border: 1px solid #071895; height: 40px; padding-left: 7px; color: #fff; border-radius: 3px;" type="email" class="mt-4" id="email" placeholder="Enter Your E-mail" required>
+                        <input style="width: 100%; background-color: transparent; border: 1px solid #071895; height: 40px; padding-left: 7px; color: #fff; border-radius: 3px;" type="password" class="mt-4" id="password" placeholder="Create New Password" required>
+                        <textarea style="width: 100%; margin-top: 20px; background-color: transparent; border: 1px solid #071895; color: #fff; border-radius: 3px; padding-left: 7px;" id="w3review" name="w3review" rows="4" cols="50" placeholder="Send Message"></textarea>
+                        <button>Send</button>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="location" data-aos="fade-up">
+                        <iframe style="height: 380px; width: 100%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3631.0850607393477!2d88.79178347449553!3d24.482509460278703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fc0bf0f590c867%3A0x5496f1c12b94b9a0!2sBelghoria%20Bazar%2C%20Durgapur%2C%20Rajshahi!5e0!3m2!1sen!2sbd!4v1692895267068!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({duration: 1000,delay: 100});
+    </script>
+    <script src="script_1.js"></script>
+    <script src="scipt.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+</body>
+</html>
